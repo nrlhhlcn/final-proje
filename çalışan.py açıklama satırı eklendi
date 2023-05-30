@@ -1,10 +1,15 @@
-from Insan import Insan
-class Calisan(Insan):
+from Insan import Insan #kütüphaneyi dahil ediyoruz
+class Calisan(Insan):#Calisan adında bir sınıf oluşturuyoruz
     def __init__(self,isim,soyisim,yas,cinsiyet,uyruk,tc_numarasi,sektor,tecrube,maas):
         super().__init__(isim,soyisim,yas,cinsiyet,uyruk,tc_numarasi)
+        ##super().__init__ methodu bizim calışan sınıfından bilgileri almamızı sağlıyor
         self.__sektor=sektor
         self.__tecrube=tecrube
         self.__maas=maas
+
+    # Her özellik için get ve set fonsiyonları oluşturuyoruz...
+    # get fonsiyonları bize özellikleri döndürecek
+    # set fonsiyonları ise o özellikleri değşiştirmemizi sağlayacak
     def get_sektor(self):
         return self.__sektor
     def set_sektor(self,sektor):
@@ -17,7 +22,7 @@ class Calisan(Insan):
         return self.__maas
     def set_maas(self,maas):
         self.__maas=maas
-    def zam_hakki(self):
+    def zam_hakki(self):#bu fonksiyon çalışanın tecrübesine göre yeni maaş hesaplamamızı sağlıyor
         try:
             if self.get_tecrube()<2:
                 print("Tecrübeniz iki yıldan az olduğu için yeni maaşınız hesaplanmadi")
@@ -41,9 +46,12 @@ class Calisan(Insan):
         except ValueError:
             print("Hatalı veri girişi!")
 
-    def __str__(self):
+    def __str__(self): #str ile istenilen bilgileri konsol ekranına yazdırıyoruz
         return f"--------------BİLGİLER--------------------\n" \
                f"isim:{self.get_isim()}\nsoyisim:{self.get_soyisim()}\ntecrübe:{self.get_tecrube()}\nYeni Maaş:{+self.zam_hakki()}"
+
+
+
 
 
 
