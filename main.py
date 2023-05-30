@@ -55,3 +55,7 @@ onbes_ustu_maas=df[df["MAAŞ💵"]>15000]
 print("*"*100,"\n")
 print("Maaşı 15000 liranın üzerinde olan kişi sayısı",len(onbes_ustu_maas),"\n")
 print("*"*100)
+
+kucuk_df=df.sort_values("YENİ MAAŞ")
+print("-"*20,"Yeni Maaşa göre sıralama","-"*20,"\n",kucuk_df)
+print("*"*100)
