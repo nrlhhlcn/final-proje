@@ -16,8 +16,8 @@ issiz3=Issiz("Hande","Erçel","29","kız👩","türk",12345678,3)
 
 
 calisan1=Calisan("Murat","Boz",43,"erkek👨","Türk",123456789,"diğer",3,12000)
-calisan2=Calisan("Elon","Musk",32,"Erkek👨","Güney Amerike",123456789,"Teknoloji💻",8,22000)
-calisan3=Calisan("scarlett","johansson",38,"kız👩","ABD",123456789,"inşaat🏢",8,23000)
+calisan2=Calisan("Elon","Musk",32,"Erkek👨","Güney Amerike",123456789,"Teknoloji💻",7,22000)
+calisan3=Calisan("scarlett","johansson",38,"kız👩","ABD",123456789,"inşaat🏢",9,23000)
 
 
 
@@ -30,27 +30,29 @@ beyazYaka1=Beyazyaka("dominic","toretto",55,"erkek👨","ABD",123456789,"diğer"
 beyazYaka2=Beyazyaka("tony","stark",55,"erkek👨","ABD",123456789,"muhasebe🧾",3,13000,1500)
 beyazYaka3=Beyazyaka("fahriye","evcen",37,"kız👩","türk",9876543254,"muhasebe🧾",4,12000,2000)
 
-
+                #BİR TANE SÖZLÜK OLUŞTURUYORUZ VE İÇİNE GEREKLİ OLAN BİLGİLERİ GİRİYORUZ!!!!
 veri={
-    "NESNELER":["İnsan","İnsan","Çalışan","Çalışan","Çalışan","Mavi yaka","Mavi yaka","Mavi yaka","Beyaz yaka","Beyaz yaka","Beyaz yaka"],
-    "T.C":[insan1.get_tc_numarsi(),insan2.get_tc_numarsi(),calisan1.get_tc_numarsi(),calisan2.get_tc_numarsi(),calisan3.get_tc_numarsi(),maviYaka1.get_tc_numarsi(),maviYaka2.get_tc_numarsi(),maviYaka3.get_tc_numarsi(),beyazYaka1.get_tc_numarsi(),beyazYaka2.get_tc_numarsi(),beyazYaka3.get_tc_numarsi()],
-    "İSİM":[insan1.get_isim(),insan2.get_isim(),calisan1.get_isim(),calisan2.get_isim(),calisan3.get_isim(),maviYaka1.get_isim(),maviYaka2.get_isim(),maviYaka3.get_isim(),beyazYaka1.get_isim(),beyazYaka2.get_isim(),beyazYaka3.get_isim()],
-    "SOYİSİM":[insan1.get_soyisim(),insan2.get_soyisim(),calisan1.get_soyisim(),calisan2.get_soyisim(),calisan3.get_soyisim(),maviYaka1.get_soyisim(),maviYaka2.get_soyisim(),maviYaka3.get_soyisim(),beyazYaka1.get_soyisim(),beyazYaka2.get_soyisim(),beyazYaka3.get_soyisim()],
-    "YAS":[insan1.get_yas(),insan2.get_yas(),calisan1.get_yas(),calisan2.get_yas(),calisan3.get_yas(),maviYaka1.get_yas(),maviYaka2.get_yas(),maviYaka3.get_yas(),beyazYaka1.get_yas(),beyazYaka2.get_yas(),beyazYaka3.get_yas()],
-    "CİNSİYET":[insan1.get_cinsiyet(),insan2.get_cinsiyet(),calisan1.get_cinsiyet(),calisan2.get_cinsiyet(),calisan2.get_cinsiyet(),maviYaka1.get_cinsiyet(),maviYaka2.get_cinsiyet(),maviYaka3.get_cinsiyet(),beyazYaka1.get_cinsiyet(),beyazYaka2.get_cinsiyet(),beyazYaka3.get_cinsiyet()],
-    "UYRUK":[insan1.get_uyruk(),insan2.get_uyruk(),calisan1.get_uyruk(),calisan2.get_uyruk(),calisan3.get_uyruk(),maviYaka1.get_uyruk(),maviYaka2.get_uyruk(),maviYaka3.get_uyruk(),beyazYaka1.get_uyruk(),beyazYaka2.get_uyruk(),beyazYaka3.get_uyruk()],
-    "SEKTÖR":[0,0,calisan1.get_sektor(),calisan2.get_sektor(),calisan3.get_sektor(),maviYaka1.get_sektor(),maviYaka2.get_sektor(),maviYaka3.get_sektor(),beyazYaka1.get_sektor(),beyazYaka2.get_sektor(),beyazYaka3.get_sektor()],
-    "TECRÜBE":[0,0,calisan1.get_tecrube(),calisan2.get_tecrube(),calisan3.get_tecrube(),maviYaka1.get_tecrube(),maviYaka2.get_tecrube(),maviYaka3.get_tecrube(),beyazYaka1.get_tecrube(),beyazYaka2.get_tecrube(),beyazYaka3.get_tecrube()],
-    "MAAŞ💵":[0,0,calisan1.get_maas(),calisan2.get_maas(),calisan3.get_maas(),maviYaka1.get_maas(),maviYaka2.get_maas(),maviYaka3.get_maas(),beyazYaka1.get_maas(),beyazYaka2.get_maas(),beyazYaka3.get_maas()],
-    "YIPRANMA PAYI":[0,0,0,0,0,maviYaka1.get_yipranma_payi(),maviYaka2.get_yipranma_payi(),maviYaka3.get_yipranma_payi(),0,0,0],
-    "TEŞVİK PRİMİ":[0,0,0,0,0,0,0,0,beyazYaka1.get_tesvik_primi(),beyazYaka2.get_tesvik_primi(),beyazYaka3.get_tesvik_primi()],
-    "YENİ MAAŞ":[0,0,calisan1.zam_hakki()+calisan1.get_maas(),calisan2.zam_hakki()+calisan2.get_maas(),calisan3.zam_hakki(),maviYaka1.Zam_hakki()+maviYaka1.get_maas(),maviYaka2.Zam_hakki()+maviYaka2.get_maas(),maviYaka3.Zam_hakki()+maviYaka1.get_maas(),beyazYaka1.Zam_hakki()+beyazYaka1.get_maas(),beyazYaka2.Zam_hakki()+beyazYaka2.get_maas(),beyazYaka3.Zam_hakki()+beyazYaka3.get_maas()]
+    "NESNELER":["İnsan","İnsan","İssiz","İssiz","İssiz","Çalışan","Çalışan","Çalışan","Mavi yaka","Mavi yaka","Mavi yaka","Beyaz yaka","Beyaz yaka","Beyaz yaka"],
+    "T.C":[insan1.get_tc_numarsi(),insan2.get_tc_numarsi(),issiz1.get_tc_numarsi(),issiz2.get_tc_numarsi(),issiz3.get_tc_numarsi(),calisan1.get_tc_numarsi(),calisan2.get_tc_numarsi(),calisan3.get_tc_numarsi(),maviYaka1.get_tc_numarsi(),maviYaka2.get_tc_numarsi(),maviYaka3.get_tc_numarsi(),beyazYaka1.get_tc_numarsi(),beyazYaka2.get_tc_numarsi(),beyazYaka3.get_tc_numarsi()],
+    "İSİM":[insan1.get_isim(),insan2.get_isim(),issiz1.get_isim(),issiz2.get_isim(),issiz3.get_isim(),calisan1.get_isim(),calisan2.get_isim(),calisan3.get_isim(),maviYaka1.get_isim(),maviYaka2.get_isim(),maviYaka3.get_isim(),beyazYaka1.get_isim(),beyazYaka2.get_isim(),beyazYaka3.get_isim()],
+    "SOYİSİM":[insan1.get_soyisim(),insan2.get_soyisim(),issiz1.get_soyisim(),issiz2.get_soyisim(),issiz3.get_soyisim(),calisan1.get_soyisim(),calisan2.get_soyisim(),calisan3.get_soyisim(),maviYaka1.get_soyisim(),maviYaka2.get_soyisim(),maviYaka3.get_soyisim(),beyazYaka1.get_soyisim(),beyazYaka2.get_soyisim(),beyazYaka3.get_soyisim()],
+    "YAS":[insan1.get_yas(),insan2.get_yas(),issiz1.get_yas(),issiz2.get_yas(),issiz3.get_yas(),calisan1.get_yas(),calisan2.get_yas(),calisan3.get_yas(),maviYaka1.get_yas(),maviYaka2.get_yas(),maviYaka3.get_yas(),beyazYaka1.get_yas(),beyazYaka2.get_yas(),beyazYaka3.get_yas()],
+    "CİNSİYET":[insan1.get_cinsiyet(),insan2.get_cinsiyet(),issiz1.get_cinsiyet(),issiz2.get_cinsiyet(),issiz3.get_cinsiyet(),calisan1.get_cinsiyet(),calisan2.get_cinsiyet(),calisan2.get_cinsiyet(),maviYaka1.get_cinsiyet(),maviYaka2.get_cinsiyet(),maviYaka3.get_cinsiyet(),beyazYaka1.get_cinsiyet(),beyazYaka2.get_cinsiyet(),beyazYaka3.get_cinsiyet()],
+    "UYRUK":[insan1.get_uyruk(),insan2.get_uyruk(),issiz1.get_uyruk(),issiz2.get_uyruk(),issiz3.get_uyruk(),calisan1.get_uyruk(),calisan2.get_uyruk(),calisan3.get_uyruk(),maviYaka1.get_uyruk(),maviYaka2.get_uyruk(),maviYaka3.get_uyruk(),beyazYaka1.get_uyruk(),beyazYaka2.get_uyruk(),beyazYaka3.get_uyruk()],
+    "SEKTÖR":[0,0,0,0,0,calisan1.get_sektor(),calisan2.get_sektor(),calisan3.get_sektor(),maviYaka1.get_sektor(),maviYaka2.get_sektor(),maviYaka3.get_sektor(),beyazYaka1.get_sektor(),beyazYaka2.get_sektor(),beyazYaka3.get_sektor()],
+    "TECRÜBE":[0,0,0,0,0,calisan1.get_tecrube(),calisan2.get_tecrube(),calisan3.get_tecrube(),maviYaka1.get_tecrube(),maviYaka2.get_tecrube(),maviYaka3.get_tecrube(),beyazYaka1.get_tecrube(),beyazYaka2.get_tecrube(),beyazYaka3.get_tecrube()],
+    "MAAŞ💵":[0,0,0,0,0,calisan1.get_maas(),calisan2.get_maas(),calisan3.get_maas(),maviYaka1.get_maas(),maviYaka2.get_maas(),maviYaka3.get_maas(),beyazYaka1.get_maas(),beyazYaka2.get_maas(),beyazYaka3.get_maas()],
+    "YIPRANMA PAYI":[0,0,0,0,0,0,0,0,maviYaka1.get_yipranma_payi(),maviYaka2.get_yipranma_payi(),maviYaka3.get_yipranma_payi(),0,0,0],
+    "TEŞVİK PRİMİ":[0,0,0,0,0,0,0,0,0,0,0,beyazYaka1.get_tesvik_primi(),beyazYaka2.get_tesvik_primi(),beyazYaka3.get_tesvik_primi()],
+    "YENİ MAAŞ":[0,0,0,0,0,calisan1.zam_hakki()+calisan1.get_maas(),calisan2.zam_hakki()+calisan2.get_maas(),calisan3.zam_hakki(),maviYaka1.Zam_hakki()+maviYaka1.get_maas(),maviYaka2.Zam_hakki()+maviYaka2.get_maas(),maviYaka3.Zam_hakki()+maviYaka1.get_maas(),beyazYaka1.Zam_hakki()+beyazYaka1.get_maas(),beyazYaka2.Zam_hakki()+beyazYaka2.get_maas(),beyazYaka3.Zam_hakki()+beyazYaka3.get_maas()]
 
 }
 
-df=pd.DataFrame(veri,[1,2,3,4,5,6,7,8,9,10,11])
+df=pd.DataFrame(veri,[1,2,3,4,5,6,7,8,9,10,11,12,13,14]) #Dataframeyi oluşturuyoruz
 
 print(df)
+
+        #Projede istenilenleri yapıyoruz
 onbes_ustu_maas=df[df["MAAŞ💵"]>15000]
 print("*"*100,"\n")
 print("Maaşı 15000 liranın üzerinde olan kişi sayısı",len(onbes_ustu_maas),"\n")
@@ -59,6 +61,7 @@ print("*"*100)
 kucuk_df=df.sort_values("YENİ MAAŞ")
 print("-"*20,"Yeni Maaşa göre sıralama","-"*20,"\n",kucuk_df)
 print("*"*100)
+
 
 
 print("*"*100)
@@ -81,3 +84,8 @@ print(yeni_maas_ortalamasi)
 yeni_df = df[["İSİM", "SOYİSİM", "SEKTÖR","MAAŞ💵"]]
 print("-"*10,"İSİM, SOYİSİM, SEKTÖR ve YENİ MAAŞ'A GÖRE DATAFREME","-"*10)
 print(yeni_df)
+
+print("*"*40)
+secili_liste = df[(df.index >= 4) & (df.index <= 10) & (df["YENİ MAAŞ"] > 10000)][["T.C", "YENİ MAAŞ"]]
+print(secili_liste)
+
