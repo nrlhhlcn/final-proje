@@ -59,3 +59,25 @@ print("*"*100)
 kucuk_df=df.sort_values("YENİ MAAŞ")
 print("-"*20,"Yeni Maaşa göre sıralama","-"*20,"\n",kucuk_df)
 print("*"*100)
+
+
+print("*"*100)
+print("-"*20,"TECRÜBESİ 3 YILDAN FAZLA OLAN BEYAZ YAKALILAR","-"*20)
+tecrube_filtre = df[(df["TECRÜBE"] > 3) & (df["NESNELER"].str.contains("Beyaz yaka"))]
+print(tecrube_filtre)
+print("*"*100)
+
+
+gruplandirma = df.groupby("NESNELER")
+tecrube_ortalamasi = gruplandirma["TECRÜBE"].mean()
+yeni_maas_ortalamasi = gruplandirma["YENİ MAAŞ"].mean()
+
+print("-"*10,"Tecrübe Ortalamaları","-"*10)
+print(tecrube_ortalamasi)
+print("-"*10,"Yeni Maaş Ortalamaları","-"*10,"\n")
+print(yeni_maas_ortalamasi)
+
+
+yeni_df = df[["İSİM", "SOYİSİM", "SEKTÖR","MAAŞ💵"]]
+print("-"*10,"İSİM, SOYİSİM, SEKTÖR ve YENİ MAAŞ'A GÖRE DATAFREME","-"*10)
+print(yeni_df)
