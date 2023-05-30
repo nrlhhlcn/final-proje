@@ -1,4 +1,6 @@
-class Insan():
+class Insan():#Insan isminde bir tane sınıf oluşturduk
+    
+    #init methodunu kullanarak gerekli özellikleri alıyoruz alıyoruz 
     def __init__(self,isim,soyisim,yas,cinsiyet,uyruk,tc_numarasi):
         self.__isim=isim
         self.__soyisim=soyisim
@@ -7,6 +9,9 @@ class Insan():
         self.__tc_numarasi=tc_numarasi
         self.__uyruk=uyruk
 
+#Her özellik için get ve set fonsiyonları oluşturuyoruz...
+#get fonsiyonları bize özellikleri döndürecek
+#set fonsiyonları ise o özellikleri değşiştirmemizi sağlayacak
     def get_isim(self):
         return self.__isim
     def set_isim(self,isim):
@@ -37,9 +42,12 @@ class Insan():
     def set_uyruk(self,uyruk):
         self.__uyruk=uyruk
 
-    def __str__(self):
+    def __str__(self):#str ile istenilen bilgileri konsol ekranına yazdırıyoruz
         print("-----------------------PERSONEL BİLGİLERİ------------------")
         return f"isim:{self.get_isim()}\nsoyisim:{self.get_soyisim()}\nyas:{self.get_yas()}\ncinsiyet:{self.get_cinsiyet()}\ntc:{self.get_tc_numarsi()}\nuyruk:{self.get_uyruk()}"
+
+
+
 
 
 
