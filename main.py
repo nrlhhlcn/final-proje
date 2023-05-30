@@ -49,3 +49,9 @@ veri={
 }
 
 df=pd.DataFrame(veri,[1,2,3,4,5,6,7,8,9,10,11])
+
+print(df)
+onbes_ustu_maas=df[df["MAAŞ💵"]>15000]
+print("*"*100,"\n")
+print("Maaşı 15000 liranın üzerinde olan kişi sayısı",len(onbes_ustu_maas),"\n")
+print("*"*100)
